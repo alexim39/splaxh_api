@@ -1,4 +1,4 @@
-const nodemailer = require('nodemailer');
+/* const nodemailer = require('nodemailer');
 const config = require('./../../config/config');
 
 module.exports = class EmailClass { 
@@ -64,4 +64,4 @@ module.exports = class EmailClass {
     this.send(user.email, 'Account Activation', emailBody);
   }
 
-}
+} */

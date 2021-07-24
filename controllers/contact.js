@@ -5,6 +5,7 @@ module.exports = class Contact {
     // Create comment
     static async create(req, res) {
         try {
+            console.log(req.body)
             // validate inputs
             const error = await ContactValidator(req.body);
             if (error.message) return res.status(400).send(error.message);

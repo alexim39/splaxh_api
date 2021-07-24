@@ -22,10 +22,6 @@ const upload = multer({
         fileSize: 1024 * 1024 * 100
     },
     fileFilter: (req, file, cb) => {
-        if (file.image == "undefined") {
-            req.fileTypeValidationError = 'File is required';
-            return cb(null, false, req.fileTypeValidationError);
-        }
         if (file.mimetype == 'audio/mpeg' || file.mimetype == 'audio/mp4') {
             cb(null, true);
         } else {
@@ -39,7 +35,7 @@ const upload = multer({
 // audio file
 router.post('/audioFile', upload.single('file'), (req, res) => {
     if (req.fileTypeValidationError) return res.status(500).json({ msg: req.fileTypeValidationError, code: 500 });
-    return res.status(200).json({ msg: `Upload was successful, we will get back to you shortly`, code: 200 });
+    return res.status(200).json({ msg: `Upload was successful, go ahead to make payment`, code: 200 });
 
 });
 

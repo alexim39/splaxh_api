@@ -9,13 +9,14 @@ exports.AudioModel = new mongoose.model('Audio', new mongoose.Schema({
     },
     stageName: {
         type: String,
-        unique: true,
         required: true,
-        index: { unique: true }
+        
     },
     trackTitle: {
         type: String,
-        require: true
+        require: true,
+        index: { unique: true },
+        unique: true
     },
     trackCategory: {
         type: String,
