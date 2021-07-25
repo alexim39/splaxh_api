@@ -10,7 +10,7 @@ const cors = require('cors');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-    //origin: ['http://tinotune.com', 'http://www.tinotune.com', 'https://tinotune.herokuapp.com', 'http://localhost:4200'],
+    origin: ['http://tinotune.com', 'www.tinotune.com', 'https://tinotune.herokuapp.com', 'http://localhost:4200'],
     credentials: true
 }));
 
