@@ -82,7 +82,7 @@ module.exports = class Upload {
                     to: 'fikxit.info@gmail.com, adewale263@yahoo.com, tinotechengineeringltd@gmail.com, waflowventuresltd@yahoo.com',
                     subject: 'Tinotune Video Music Upload',
                     html: `Hi, <br>
-                    Please not that someone with email ${user.email} just uploaded video music to Tinotune`
+                    Please not that someone with email ${req.body.email} just uploaded video music to Tinotune`
                 };
             
                 transporter.sendMail(mailOptions, (error, info) => {
