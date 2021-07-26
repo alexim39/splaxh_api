@@ -15,8 +15,8 @@ exports.AudioModel = new mongoose.model('Audio', new mongoose.Schema({
     trackTitle: {
         type: String,
         require: true,
-        index: { unique: true },
-        unique: true
+        //index: { unique: true },
+        //unique: true
     },
     trackCategory: {
         type: String,
