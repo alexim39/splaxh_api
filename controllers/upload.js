@@ -25,6 +25,8 @@ module.exports = class Upload {
         try {
             jwt.verify(req.token, config.server.token);
 
+            //console.log(req.body); return;
+
             // validate inputs
             const audioValidatorError = await AudioValidator(req.body);
             if (audioValidatorError.message) return res.status(400).send(audioValidatorError.message);
@@ -39,7 +41,7 @@ module.exports = class Upload {
                     to: 'fikxit.info@gmail.com, adewale263@yahoo.com, tinotechengineeringltd@gmail.com, waflowventuresltd@yahoo.com',
                     subject: 'Tinotune Audio Music Upload',
                     html: `Hi, <br>
-                    Please not that someone with email ${user.email} just uploaded audio music to Tinotune`
+                    Please not that someone with email ${req.body.email} just uploaded audio music to Tinotune`
                 };
             
                 transporter.sendMail(mailOptions, (error, info) => {
