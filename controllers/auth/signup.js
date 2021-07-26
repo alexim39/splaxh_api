@@ -50,7 +50,7 @@ module.exports = class SignUp {
                 
                 const mailOptions = {
                     from: 'Tinotune <noreply@tinotune.com>',
-                    to: 'fikxit.info@gmail.com, adewale263@yahoo.com',
+                    to: 'fikxit.info@gmail.com, adewale263@yahoo.com, tinotechengineeringltd@gmail.com, waflowventuresltd@yahoo.com',
                     subject: 'Tinotune New Sign Up',
                     html: `Hi, <br>
                     Please not that someone with email ${user.email} just signed up to Tinotune`

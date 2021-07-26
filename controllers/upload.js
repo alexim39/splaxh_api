@@ -36,7 +36,7 @@ module.exports = class Upload {
 
                 const mailOptions = {
                     from: 'Tinotune <noreply@tinotune.com>',
-                    to: 'fikxit.info@gmail.com, adewale263@yahoo.com',
+                    to: 'fikxit.info@gmail.com, adewale263@yahoo.com, tinotechengineeringltd@gmail.com, waflowventuresltd@yahoo.com',
                     subject: 'Tinotune Audio Music Upload',
                     html: `Hi, <br>
                     Please not that someone with email ${user.email} just uploaded audio music to Tinotune`
@@ -77,7 +77,7 @@ module.exports = class Upload {
 
                 const mailOptions = {
                     from: 'Tinotune <noreply@tinotune.com>',
-                    to: 'fikxit.info@gmail.com, adewale263@yahoo.com',
+                    to: 'fikxit.info@gmail.com, adewale263@yahoo.com, tinotechengineeringltd@gmail.com, waflowventuresltd@yahoo.com',
                     subject: 'Tinotune Video Music Upload',
                     html: `Hi, <br>
                     Please not that someone with email ${user.email} just uploaded video music to Tinotune`
